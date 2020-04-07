@@ -57,7 +57,7 @@ describe('<IndividualProject />', () => {
 
       fireEvent.click(queryByTestId('delete-project'));
       expect(
-        getByText('Are you sure you want to delete this project?')
+        getByText('Do you want to delete?')
       ).toBeTruthy();
 
       fireEvent.click(getByText('Delete'));
@@ -70,7 +70,7 @@ describe('<IndividualProject />', () => {
 
       fireEvent.keyDown(queryByTestId('delete-project'));
       expect(
-        getByText('Are you sure you want to delete this project?')
+        getByText('Do you want to delete?')
       ).toBeTruthy();
 
       fireEvent.click(getByText('Delete'));
@@ -83,7 +83,7 @@ describe('<IndividualProject />', () => {
 
       fireEvent.click(queryByTestId('delete-project'));
       expect(
-        getByText('Are you sure you want to delete this project?')
+        getByText('Do you want to delete?')
       ).toBeTruthy();
 
       fireEvent.click(getByText('Cancel'));
@@ -96,7 +96,7 @@ describe('<IndividualProject />', () => {
 
       fireEvent.keyDown(queryByTestId('delete-project'));
       expect(
-        getByText('Are you sure you want to delete this project?')
+        getByText('Do you want to delete?')
       ).toBeTruthy();
 
       fireEvent.keyDown(getByText('Cancel'));
