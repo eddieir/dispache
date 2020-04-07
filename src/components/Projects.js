@@ -7,7 +7,7 @@ export const Projects = ({ activeValue = null }) => {
   const [active, setActive] = useState(activeValue);
   const { setSelectedProject } = useSelectedProjectValue();
   const { projects } = useProjectsValue();
-
+  console.log(projects);
   return (
     projects &&
     projects.map(project => (
@@ -21,6 +21,7 @@ export const Projects = ({ activeValue = null }) => {
             : 'sidebar__project'
         }
       >
+
         <div
           role="button"
           data-testid="project-action"
