@@ -1,7 +1,7 @@
 import firebase from 'firebase/app';
 import 'firebase/firestore';
 
-const config = {
+/*const config = {
   apiKey: process.env.apiKey,
   authDomain: process.env.authDomain,
   databaseURL: process.env.databaseURL,
@@ -9,9 +9,10 @@ const config = {
   storageBucket: process.env.storageBucket,
   messageSenderId: process.env.messageSenderId
 };
-const firebaseConfig = firebase.initializeApp(config);
+*/
+//const firebaseConfig = firebase.initializeApp(config);
 
-/*const firebaseConfig = firebase.initializeApp({
+const firebaseConfig = firebase.initializeApp({
   apiKey: 'AIzaSyB-Lb1ZJ6WM2_ZMuAA-eJadVMeq7NuSKz0',
   authDomain: 'dispache-4b5a7.firebaseapp.com',
   databaseURL: 'https://dispache-4b5a7.firebaseio.com',
@@ -24,5 +25,5 @@ const firebaseConfig = firebase.initializeApp(config);
 
 
 });
-*/
+
 export { firebaseConfig as firebase };
